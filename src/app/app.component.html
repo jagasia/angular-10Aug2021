@@ -1,0 +1,28 @@
+<app-menu [status]="status"></app-menu>
+<div class="jumbotron text-center">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <router-outlet name="col1"></router-outlet>
+
+    </div>
+    <div class="col-sm-4">
+      <!-- <input type="text" name="title" id="" [(ngModel)]="title"> -->
+     <!-- <app-sign-up [title]="title"></app-sign-up> -->
+     <!-- <app-login (login)="fnValidateLogin($event)">
+        I have typed this between the start and end tag of Login Component selector
+     </app-login> -->
+     <!-- <app-login (status)="fnStatus($event)"></app-login> -->
+     <router-outlet name="col2"></router-outlet>
+     <br>
+     <!-- {{status}} -->
+    </div>
+    <div class="col-sm-4">
+     <router-outlet name="col3"></router-outlet>
+    </div>
+  </div>
+</div>
